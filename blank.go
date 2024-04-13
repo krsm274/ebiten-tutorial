@@ -28,10 +28,10 @@ func (g *Game) Layout(w, h int) (int, int) {
 }
 
 func main() {
-	//g := NewGame()
+	g := NewGame()
 	ebiten.SetWindowSize(640, 480)
 	ebiten.SetWindowTitle("Hello, World!")
-	if err := ebiten.RunGame(&Game{}); err != nil {
+	if err := ebiten.RunGame(g); err != nil {
 		log.Fatal(err)
 	}
 }
